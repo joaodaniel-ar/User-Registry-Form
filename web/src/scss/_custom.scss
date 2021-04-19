@@ -1,0 +1,32 @@
+.user-filters{
+    select{
+        margin: 0 5px;
+    }
+}
+
+.dash-drop{
+    color: #3c4b64 !important;
+    margin-right: 20px;
+}
+
+.details-footer{
+    button{
+        float: right;
+        margin: 0 5px;
+    }
+}
+
+.form-actions{
+    a{
+        padding: 1px 5px 6px;
+        margin: 0 3px;
+        color: #fff !important;
+        cursor: pointer;
+        background: #15243c;
+        border-radius: 15px;
+
+        &:hover{
+            background: rgb(131, 0, 0);
+        }
+    }
+}
