@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { useHistory } from 'react-router-dom'
+import InputMask from "react-input-mask"
 import axios from 'axios';
 import {
   CCol,
@@ -48,6 +49,10 @@ const User = ({match}) => {
 
   const [values, setValues] = useState(initialValue)
   const history = useHistory()
+
+  const Input = (props) => (
+    <InputMask mask="99999-999" value={props.value} onChange={props.onChange} />
+  )
   
   function onChange(ev) {
     const { name, value } =  ev.target;
@@ -115,11 +120,11 @@ const User = ({match}) => {
                           <CLabel htmlFor="mobile">Mobile Phone</CLabel>
                         </CCol>
                         <CCol xs="6" md="6">
-                          <CInput type="text" id="phone" name="phone" placeholder="Phone Number" autoComplete="email" onChange={onChange} />
+                          <InputMask className="form-control" mask="(99) 9999-9999" type="text" id="phone" name="phone" placeholder="Phone Number" autoComplete="email" onChange={onChange} />
                           <CFormText className="help-block">Please enter your phone number</CFormText>
                         </CCol>
                         <CCol xs="6" md="6">
-                          <CInput type="text" id="mobile" name="mobile" placeholder="Mobile Phone" autoComplete="email" onChange={onChange} />
+                          <InputMask className="form-control" mask="(99) 9 9999-9999"type="text" id="mobile" name="mobile" placeholder="Mobile Phone" autoComplete="email" onChange={onChange} />
                           <CFormText className="help-block">Please enter your mobile phone number</CFormText>
                         </CCol>
                       </CFormGroup>

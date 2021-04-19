@@ -63,10 +63,6 @@ const InsertUser = ({match}) => {const user = usersData.find( user => user.id.to
     <CRow>
       <CCol lg={12}>
         <CCard>
-          <CCardHeader>
-            Index indentifiers
-            <DocsLink name="CTabs"/>
-          </CCardHeader>
           <CCardBody>
                   <CCardBody>
                     <CForm onSubmit={onSubmit} id="form1" className="form-horizontal">

@@ -29,21 +29,6 @@
       "password-confirm": "12345",
       "expire-date": "2021-04-19",
       "id": 1
-    },
-    {
-      "name": "João Daniel Amazonas Rogério",
-      "email": "financeiro@phoenixdev.com.br",
-      "phone": "1600000000",
-      "mobile": "16992529632",
-      "password": "12345",
-      "expireDate": "",
-      "username": "joaodaniel",
-      "profile": "Owner",
-      "company": "Company 1",
-      "status": "Active",
-      "password-confirm": "12345",
-      "expire-date": "2021-04-19",
-      "id": 2
     }
   ]
 }
