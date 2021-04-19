@@ -59,6 +59,13 @@ const InsertUser = ({match}) => {const user = usersData.find( user => user.id.to
     });
   }
 
+  function dateShow() {
+    if (document.getElementById('inline-radio1').checked) {
+        document.getElementById('date').style.visibility = 'visible';
+    }
+    else document.getElementById('date').style.visibility = 'hidden';
+  }
+
   return (
     <CRow>
       <CCol lg={12}>
@@ -127,11 +134,11 @@ const InsertUser = ({match}) => {const user = usersData.find( user => user.id.to
                         </CCol>
                         <CCol xs="6" md="6">
                           <CFormGroup variant="custom-radio" inline>
-                            <CInputRadio custom id="inline-radio1" name="expire" value="Yes"  />
+                            <CInputRadio onClick={() => dateShow()} custom id="inline-radio1" name="expire" value="Yes"  />
                             <CLabel variant="custom-checkbox" htmlFor="inline-radio1">Yes</CLabel>
                           </CFormGroup>
                           <CFormGroup variant="custom-radio" inline>
-                            <CInputRadio custom id="inline-radio2" name="expire" value="Never"  />
+                            <CInputRadio onClick={() => dateShow()} custom id="inline-radio2" name="expire" value="Never"  />
                             <CLabel variant="custom-checkbox" htmlFor="inline-radio2">Never</CLabel>
                           </CFormGroup>
                         </CCol>
