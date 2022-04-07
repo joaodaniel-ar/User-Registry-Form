@@ -4,7 +4,7 @@ Clone repo
 $ git clone https://github.com/joaodaniel-ar/User-Registry-Form.git
 
 # go into main directory
-$ cd my-project
+$ cd User-Registry-Form
 
 # go into api directory
 $ cd api
