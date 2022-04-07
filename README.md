@@ -1,7 +1,7 @@
 Installation
 Clone repo
 # clone the repo
-$ git clone https://github.com/joaodaniel-ar/User-Registry-Form.git my-project
+$ git clone https://github.com/joaodaniel-ar/User-Registry-Form.git
 
 # go into main directory
 $ cd my-project
