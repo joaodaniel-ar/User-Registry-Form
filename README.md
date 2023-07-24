@@ -1,32 +1,32 @@
 Installation
 Clone repo
-# clone the repo
+## clone the repo
 $ git clone https://github.com/joaodaniel-ar/User-Registry-Form.git
 
-# go into main directory
+## go into main directory
 $ cd User-Registry-Form
 
-# go into api directory
+## go into api directory
 $ cd api
 
-# start json-server
+## start json-server
 $ npm start
 
-# open another terminal and go into app's directory
+## open another terminal and go into app's directory
 $ cd web
 
-# install app's dependencies
+## install app's dependencies
 $ npm install
 
 Basic usage
-# dev server with hot reload at http://localhost:3000
+## dev server with hot reload at http://localhost:3000
 $ npm start
 Navigate to http://localhost:3000. The app will automatically reload if you change any of the source files.
 
 Build
 Run build to build the project. The build artifacts will be stored in the build/ directory.
 
-# build for production with minification
+## build for production with minification
 $ npm run build
 
-You are able to insert, delete and update a user.
+You are able to insert, delete and update an user.
